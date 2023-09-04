@@ -88,7 +88,6 @@ async function handlePokemonClick(event) {
 
     // Se um li.pokemon foi encontrado
     if (pokemonCard) {
-        console.log('Card completo:', pokemonCard);
         // Chamando a função que mostra e esconde o modal
         toggleModal();
 
