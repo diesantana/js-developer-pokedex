@@ -20,11 +20,21 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/modal.css">
 </head>
 
 <body>
     <section class="content">
         <h1>Pokedex</h1>
+
+        <div id="fade-pokemon" class="hide">
+            <span id="close-fade" class="close-icon">&times;</span>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal-pokemon" class="hide">
+        </div>
+        <!-- fim novo modal -->
 
         <ol id="pokemonList" class="pokemons">
             <!-- ..... Pokemons here ..... -->
@@ -32,7 +42,7 @@
 
         <div class="pagination">
             <button id="loadMoreButton" type="button">
-                Load More
+                Ver mais
             </button>
         </div>
     </section>
@@ -40,6 +50,7 @@
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/modal-poke.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 
